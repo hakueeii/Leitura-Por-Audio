@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto para Áudio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Texto para Áudio</h1>
+        <textarea id="text-input" rows="10" cols="30" placeholder="Digite seu texto aqui..."></textarea>
+
+        <div class="controls">
+            <label for="language-select">Idioma e Voz:</label>
+            <select id="language-select"></select>
+
+            <img id="flag" src="" alt="Bandeira do Idioma">
+
+            <label for="pitch-input">Pitch:</label>
+            <input type="range" id="pitch-input" min="0.5" max="2" step="0.1" value="1">
+
+            <label for="rate-input">Velocidade:</label>
+            <input type="range" id="rate-input" min="0.1" max="2" step="0.1" value="1">
+
+            <button id="speak-button">Ouvir</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
